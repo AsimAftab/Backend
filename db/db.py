@@ -24,6 +24,3 @@ def createUser(name,password,Address,Email,Phone,PinCode):
     conn.commit()
     conn.close() 
     return True
-
-def GetAllUser():
-    pass
