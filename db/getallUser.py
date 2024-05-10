@@ -29,6 +29,7 @@ def getAllUser():
        
     return json.dumps(userJson)
 
+
 def getSpecificUser(userId):
     conn = sqlite3.connect("medicalShop.db")
     cursor = conn.cursor()
@@ -52,4 +53,3 @@ def getSpecificUser(userId):
         }
         userJson.append(tempUser)
     return json.dumps(userJson)
-       
